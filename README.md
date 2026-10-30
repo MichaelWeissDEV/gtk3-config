@@ -1,5 +1,19 @@
-# GTK 3 configuration
+# GTK3 configuration
 
-GTK 3 settings and styles. Package: `arch-dotfiles-gtk-3.0`.
+GTK3-Einstellungen und CSS für die Desktop-Anwendungen.
 
-See [PACKAGING.md](PACKAGING.md) for installation, development and automatic updates.
+**[Dokumentation](https://arch-dotfiles.readthedocs.io/en/latest/components/#gtk3)** ·
+[Installation und Updates](https://arch-dotfiles.readthedocs.io/en/latest/arch-package/)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/MichaelWeissDEV/dotfiles/main/install.sh | bash -s -- gtk-3.0
+```
+
+Paket: `arch-dotfiles-gtk-3.0`. Dateien: `~/.config/gtk-3.0/settings.ini` und `gtk.css`.
+Quellen und `packaging/arch/PKGBUILD` werden hier gepflegt. Nach Push auf `main`
+und erfolgreichem Registry-Build aktualisiert `sudo pacman -Syu` das Paket.
+Entwicklung und Builds: [PACKAGING.md](PACKAGING.md).
+
+[![Package safety](https://github.com/MichaelWeissDEV/gtk3-config/actions/workflows/package.yml/badge.svg)](https://github.com/MichaelWeissDEV/gtk3-config/actions/workflows/package.yml)
+
+[MIT-Lizenz](LICENSE).
