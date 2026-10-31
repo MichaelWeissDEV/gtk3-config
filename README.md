@@ -14,6 +14,12 @@ Quellen und `packaging/arch/PKGBUILD` werden hier gepflegt. Nach Push auf `main`
 und erfolgreichem Registry-Build aktualisiert `sudo pacman -Syu` das Paket.
 Entwicklung und Builds: [PACKAGING.md](PACKAGING.md).
 
+### Anpassung
+
+`settings.ini` enthält die GTK3-Einstellungen; `gtk.css` ergänzt eigene Stilregeln. Betroffene GTK3-Anwendungen nach Änderungen neu starten. GTK4 verwendet eine getrennte Konfiguration.
+
+Eigene Änderungen in der aktivierten Benutzerkopie bleiben bei der Synchronisierung erhalten; neue abweichende Vorgaben erscheinen als `.pacnew`. Siehe [Update und Wiederherstellung](https://arch-dotfiles.readthedocs.io/en/latest/verification/).
+
 [![Package safety](https://github.com/MichaelWeissDEV/gtk3-config/actions/workflows/package.yml/badge.svg)](https://github.com/MichaelWeissDEV/gtk3-config/actions/workflows/package.yml)
 
 [MIT-Lizenz](LICENSE).
